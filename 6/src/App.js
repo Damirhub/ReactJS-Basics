@@ -25,6 +25,7 @@ let user = {
           <div className="col-xs-10 col-xs-offset-1">
               <Home  name = {"PERA"} age = {39} user = {user} >
               <p>This is a paragra</p>
+              <h2>This is a h2</h2>
               </Home>
                       
         </div>
