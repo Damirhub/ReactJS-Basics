@@ -6,9 +6,9 @@ import { Home } from "./components/Home";
 
 class App extends React.Component {
 
-  onGreet() {
-    alert ("Helloo!");
-  }
+onGreet() {
+  alert("alert!!!");
+}
 
   render() {
 
@@ -22,7 +22,7 @@ class App extends React.Component {
 
         <div className = "row">
           <div className="col-xs-10 col-xs-offset-1">
-              <Home  name = {"PERA"} initialAge = {29} greet = {this.onGreet }  />
+              <Home  name = {"PERA"} initialAge = {29}  greet = {this.onGreet}/>
 
                       
         </div>

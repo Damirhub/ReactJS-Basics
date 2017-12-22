@@ -8,7 +8,8 @@ export class Home extends React.Component {
     super();
       this.state = {
         age: props.initialAge,
-        status: 0
+        status: 0, 
+        homeLink : "Changed Link"
       }
 
       setTimeout(() => {
@@ -16,12 +17,7 @@ export class Home extends React.Component {
           status:1
         })
       }, 3000);
-      // setInterval(() => {
-      //   this.setState({
-      //     status: this.state.status + 0.01
-      //   })
-        
-      // }, 10);
+
   }
  
 
@@ -33,7 +29,6 @@ export class Home extends React.Component {
       this.reset ();
     }
   }
-
 
   makeYounger() {
     this.setState ({
@@ -59,6 +54,9 @@ export class Home extends React.Component {
     })
   }
 
+  onChangeLink() {
+    this.props.changeLink(this.state.homeLink);
+  }
  
   
 
@@ -71,7 +69,6 @@ export class Home extends React.Component {
         this.resetTimer();
         min ++;
      }
-
 
    
       return (
@@ -93,7 +90,10 @@ export class Home extends React.Component {
 
 
             <button onClick = { () => this.resetTimer() } className = "btn btn-warning">timer reset </button>
-            <button onClick = {this.props.greet()}>Greet</button>
+            <button onClick = {this.props.greet}>Greet</button>
+          <hr />
+           
+
         </div>
     )
   }
