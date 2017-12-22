@@ -21,7 +21,7 @@ export class Home extends React.Component {
   }
  
 
-  
+
   interval () {
         let muvar = setInterval(() => {
         this.setState({
@@ -72,12 +72,12 @@ hour () {
 
     let stat = Math.round(this.state.status*100)/100;  
     
-      if(stat > 2 ){
+      if(stat > 60 ){
         this.resetTimer();
         this.minute();
      }
 
-     if(stat > 2 ){
+     if(stat > 60 ){
       this.minute();
      }
 
