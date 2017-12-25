@@ -58,7 +58,6 @@ export class Home extends React.Component {
     this.props.changeLink(this.state.homeLink);
   }
  
-  
 
   render() {
     var min = 1;
@@ -92,7 +91,7 @@ export class Home extends React.Component {
             <button onClick = { () => this.resetTimer() } className = "btn btn-warning">timer reset </button>
             <button onClick = {this.props.greet}>Greet</button>
           <hr />
-           
+           <button onClick = {() => this.onChangeLink.bind(this)}>CHAnge Name</button>
 
         </div>
     )
